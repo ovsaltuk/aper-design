@@ -1,0 +1,12 @@
+.banner {
+    height: 100vh;
+    box-sizing: border-box;
+
+    &__cube {
+        height: 100%;
+        background-image: url("../assets/banner/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+}
