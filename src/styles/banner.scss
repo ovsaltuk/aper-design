@@ -1,12 +1,48 @@
-.banner {
-    height: 100vh;
-    box-sizing: border-box;
+@use "./var.scss";
 
-    &__cube {
-        height: 100%;
-        background-image: url("../assets/banner/banner.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-    }
+.banner {
+  position: relative;
+  height: 100vh;
+  font-family: "Normalidat";
+  color: var.$secondary-text-color;
+  background-image: url("../assets/banner/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+
+  .button {
+    font-family: 'Open-sans';
+    font-weight: 200;
+    font-size: 24px;
+    color: var.$secondary-text-color;
+  }
 }
