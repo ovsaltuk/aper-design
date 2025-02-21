@@ -4,19 +4,26 @@
   position: relative;
   height: 100vh;
   font-family: "Normalidat";
-  color: var.$secondary-text-color;
-  background-image: url("../assets/banner/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: var.$main-text-color;
   box-sizing: border-box;
 
+  &-background-img {
+    @include var.absolut-background;
+    z-index: -1;
+    // overflow: hidden;
+
+    svg {
+        height: 122%;
+        width: 100%;
+    }
+  }
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     height: 100%;
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 35vh;
     box-sizing: border-box;
   }
 
@@ -40,9 +47,9 @@
   }
 
   .button {
-    font-family: 'Open-sans';
+    font-family: "Open-sans";
     font-weight: 200;
     font-size: 24px;
-    color: var.$secondary-text-color;
+    color: var.$main-text-color;
   }
 }

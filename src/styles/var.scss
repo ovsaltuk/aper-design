@@ -1,4 +1,14 @@
 $background-main-color: #fdf9f3;
+$background-secondary-color: #fdf9f3;
 
 $main-text-color: #080d11;
 $secondary-text-color: #fdf9f3;
+
+@mixin absolut-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }

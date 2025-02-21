@@ -1,0 +1,36 @@
+@use "./var.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+
+    img {
+        width: 80px;
+    }
+}
+
+.nav {
+  padding: 10px 30px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: #ffffff4d;
+  backdrop-filter: blur(16px);
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+  &__item {
+    color: var.$main-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: var.$main-text-color
+  }
+}

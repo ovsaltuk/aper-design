@@ -1,5 +1,9 @@
 @use "./styles/var.scss";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +19,20 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
@@ -36,7 +54,5 @@ button {
 
 .container {
   margin: 0 auto;
-  padding: 0 50px;
-  max-width: 1680px;
-//   background-color: rgba($color: white, $alpha: 0.2);
+  padding: 0 10vw;
 }
