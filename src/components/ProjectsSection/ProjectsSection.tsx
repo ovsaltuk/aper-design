@@ -7,12 +7,12 @@ export const ProjectsSection: FC = () => {
       <div className="projects__container">
         <div className="projects__block">
             <div className="projects__item-title">
-                Планировка
+                
             </div>
         </div>
         <div className="projects__block">
             <div className="projects__item-title">
-                Визуализация
+                
             </div>
         </div>
         <div className="projects__block">
