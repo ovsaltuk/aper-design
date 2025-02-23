@@ -10,10 +10,25 @@
   }
 
   &__block {
+    position: relative;
     display: flex;
     align-items: center;
     height: 45vh;
     background-size: cover;
+  }
+
+  .projects__item-title {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    color: var.$secondary-text-color;
+    font-size: 50px;
+
+    span {
+      text-transform: uppercase;
+    }
   }
 
   &__block:nth-child(1) {
