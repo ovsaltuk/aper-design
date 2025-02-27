@@ -12,17 +12,17 @@ export const ProjectsSection: FC = () => {
         </div>
         <div className="projects__block">
           <div className="projects__item-title">
-            <span>Title</span>
+            <span>b-434</span>
           </div>
         </div>
         <div className="projects__block">
           <div className="projects__item-title">
-            <span>Title</span>
+            <span>d1-90</span>
           </div>
         </div>
         <div className="projects__block">
           <div className="projects__item-title">
-            <span>Title</span>
+            <span>d1-37</span>
           </div>
         </div>
       </div>

@@ -5,13 +5,14 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
   }
 
   &__block {
     position: relative;
     display: flex;
     align-items: center;
-    height: 45vh;
+    height: 48vh;
     background-size: cover;
     background-position: bottom;
   }
@@ -36,14 +37,14 @@
   }
   &__block:nth-child(2) {
     grid-area: 1 / 5 / 4 / 8;
-    background-image: url("../assets/about/bg-2.jpg");
+    background-image: url("../assets/projects/blag434.jpg");
   }
   &__block:nth-child(3) {
     grid-area: 4 / 4 / 7 / 8;
-    background-image: url("../assets/about/background-img.jpg");
+    background-image: url("../assets/projects/d1-90.jpg");
   }
   &__block:nth-child(4) {
     grid-area: 4 / 1 / 7 / 4;
-    background-image: url("../assets/about/background-img.jpg");
+    background-image: url("../assets/projects/d1-37.jpg");
   }
 }
