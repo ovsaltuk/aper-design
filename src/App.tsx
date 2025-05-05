@@ -1,18 +1,16 @@
-import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection";
-import { Banner } from "./components/Banner/Banner";
-import { Header } from "./components/Header/Header";
-import { AboutSection } from "./components/AboutSection/AboutSection";
-import "./styles/app.scss";
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import "./App.scss";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <main className="app">
-      <Header/>
-      <Banner />
-      <ProjectsSection />
-      <AboutSection />
-
-    </main>
+    <>
+      <Header />
+      <main className="main">
+        <div className="container">container</div>
+      </main>
+    </>
   );
 }
 
