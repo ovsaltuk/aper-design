@@ -1,13 +1,15 @@
 import { ReactElement } from "react"
 
 import "./styles.scss";
+import { LogoSVG } from "../common/LogoSVG";
+import { Navigation } from "../Navigation/Navigation";
 
 const Header = (): ReactElement => {
     return (<header className="header">
-        <div className="logo">
-            <img src="" alt="logo" />
-        </div>
-        <nav className="navigation">navi</nav>
+        <a className="logo" href="#">
+            <LogoSVG/>
+        </a>
+        <Navigation />
     </header>)
 }
 

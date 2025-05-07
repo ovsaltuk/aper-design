@@ -1,72 +1,115 @@
+@use "./styles/_variables" as var;
+
 /* Reset and base styles  */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Roboto-Light.woff2") format("woff2"),
+    url("/fonts/Roboto-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}
+
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-a, a:link, a:visited  {
-    text-decoration: none;
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var.$text-black;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
 }
 
-a:hover  {
-    text-decoration: none;
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
-h1, h2, h3, h4, h5, h6, p {
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-size: inherit;
-	font-weight: inherit;
+  font-weight: inherit;
 }
 
-ul, ul li {
-	list-style: none;
+ul,
+ul li {
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
-button, input[type="submit"] {
-    display: inline-block;
-    box-shadow: none;
-    background-color: transparent;
-    background: none;
-    cursor: pointer;
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
-    outline: none;
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .container {
   max-width: 1596px;
   margin: 0 auto;
-  background-color: aqua;
 }
-
-

@@ -1,0 +1,19 @@
+@use "../../styles/_variables" as var;
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px; 
+  border: 1px solid #D9D9D9;
+  padding: 15px 40px;
+
+  &__list {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__link {
+    color: var.$text-black;
+  }
+}

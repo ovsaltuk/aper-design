@@ -1,0 +1,48 @@
+@use "../../../styles/_variables" as var;
+
+.main-section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;  
+
+    .container {
+        width: 100%;
+    }
+
+    &__background-svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25%;
+        color: var.$light-gray;
+        opacity: .2;
+        transform: translate(-50%, -50%);
+        
+        path {
+            stroke-width: 0.3px;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 64px;
+        color: var.$text-black;
+    }
+
+    &__subtitle {
+        margin-bottom: 122px;
+        font-size: 32px;
+        color: var.$text-black;
+    }
+
+    &__order-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        color: var.$text-black;
+    }
+}
