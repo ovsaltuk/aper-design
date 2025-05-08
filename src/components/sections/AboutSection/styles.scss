@@ -1,0 +1,60 @@
+.about {
+  position: relative;
+  font-family: "Inter";
+  &__title {
+    // position: absolute;
+    font-size: 200px;
+    font-weight: 200;
+    text-transform: uppercase;
+    opacity: .3;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 10%;
+    padding-bottom: 8%;
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+
+    &-points {
+      display: flex;
+      flex-direction: column;
+      gap: 160px;
+    }
+
+    &-img-container {
+      padding-left: 60px;
+    }
+  }
+
+  &__description {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    &-text {
+      font-size: 24px;
+    }
+  }
+}
+
+.advantage {
+  position: relative;
+  &__number {
+    font-size: 64px;
+    font-weight: 200;
+  }
+
+  &__text {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 24px;
+    
+  }
+}

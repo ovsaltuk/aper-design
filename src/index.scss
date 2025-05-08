@@ -19,6 +19,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/Inter-Thin.woff2") format("woff2"),
+    url("/fonts/Inter-Thin.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.woff2") format("woff2"),
+    url("/fonts/Inter-Light.woff") format("woff");
+  font-display: swap;
+}
+
+
+
 * {
   padding: 0px;
   margin: 0px;

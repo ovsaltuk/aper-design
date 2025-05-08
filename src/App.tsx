@@ -2,6 +2,7 @@
 // import viteLogo from '/vite.svg'
 import "./App.scss";
 import Header from "./components/Header/Header";
+import { AboutSection } from "./components/sections/AboutSection/AboutSection";
 import { MainSection } from "./components/sections/MainSection/MainSection";
 import { ProjectsSection } from "./components/sections/ProjectsSection/ProjectsSection";
 
@@ -12,6 +13,7 @@ function App() {
       <main className="main">
         <MainSection />
         <ProjectsSection />
+        <AboutSection />
       </main>
     </>
   );
