@@ -1,12 +1,10 @@
+@use "../../../styles/variables" as var;
+
 .about {
   position: relative;
   font-family: "Inter";
   &__title {
-    // position: absolute;
-    font-size: 200px;
-    font-weight: 200;
-    text-transform: uppercase;
-    opacity: .3;
+    @include var.section-title;
   }
   .container {
     display: grid;
