@@ -4,6 +4,7 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import { AboutSection } from "./components/sections/AboutSection/AboutSection";
 import { MainSection } from "./components/sections/MainSection/MainSection";
+import { ProcessSection } from "./components/sections/ProcessSection/ProcessSection";
 import { ProjectsSection } from "./components/sections/ProjectsSection/ProjectsSection";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <MainSection />
         <ProjectsSection />
         <AboutSection />
+        <ProcessSection />
       </main>
     </>
   );

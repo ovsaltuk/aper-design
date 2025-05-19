@@ -1,6 +1,7 @@
 import { FC } from "react";
 import "./styles.scss";
 import AboutImg from "../../../assets/about-img.webp";
+import { SectionTitle } from "../../common/SectionTitle/SectionTitle";
 
 export const AboutSection: FC = () => {
   return (
@@ -28,7 +29,7 @@ export const AboutSection: FC = () => {
         </div>
 
         <div className="about__description">
-        <h2 className="about__title">About</h2>
+          <SectionTitle text={"about"} />
           <p className="about__description-text">
             Меня зовут Первова Анастасия. Закончила СПГХПА им. А. Л. Штиглица.
             По образованию я художник-проектировщик интерьеров.

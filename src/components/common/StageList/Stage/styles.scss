@@ -1,0 +1,23 @@
+.stage {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+
+    &__number {
+        font-size: 32px;
+        min-width: 36px;
+    }
+
+    &__title {
+        min-width: 186px;
+        max-width: 186px;
+        font-size: 24px;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

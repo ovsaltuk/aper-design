@@ -1,0 +1,17 @@
+@use "../../../styles/_variables" as var;
+
+.process-section {
+    padding-bottom: 180px;
+    &__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center
+    }
+
+    &__title {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
