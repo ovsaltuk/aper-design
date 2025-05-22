@@ -58,6 +58,8 @@ html {
 
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE и Edge */
+
+  user-select: none
 }
 
 html::-webkit-scrollbar {
@@ -68,6 +70,7 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
+  color: var.$text-black;
 }
 
 a:hover {

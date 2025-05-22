@@ -1,0 +1,29 @@
+.contacts-section {
+  padding: 170px 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 70px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 64px;
+  }
+}
