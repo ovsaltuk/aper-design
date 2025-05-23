@@ -1,7 +1,15 @@
+@use "../../../styles/variables" as var;
+
 .section-title {
     font-family: 'Inter';
     font-size: 200px;
     font-weight: 200;
     text-transform: uppercase;
     opacity: 0.3;
+}
+
+@media (max-width: var.$l-breakpoint) {
+  .section-title {
+    font-size: 120px;
+  }
 }

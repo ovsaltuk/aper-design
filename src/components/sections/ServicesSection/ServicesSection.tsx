@@ -4,7 +4,7 @@ import { SectionTitle } from "../../common/SectionTitle/SectionTitle";
 import "./styles.scss";
 
 export const ServicesSection: FC = () => {
-    return (<section className="services-section">
+    return (<section className="services-section" id="services">
         <div className="container services-section__container">
             <SectionTitle text={"services"} className="services-section__title" />
             <img src={background} alt="background" />

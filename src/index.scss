@@ -136,3 +136,10 @@ label {
   max-width: 1596px;
   margin: 0 auto;
 }
+
+
+@media (max-width: var.$l-breakpoint) {
+  .container {
+    max-width: 1200px;
+  }
+}

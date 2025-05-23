@@ -2,14 +2,13 @@
 
 .about {
   position: relative;
+  @include var.section-margin;;
   font-family: "Inter";
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding-top: 10%;
-    padding-bottom: 8%;
   }
 
   &__advantages {
@@ -19,7 +18,7 @@
     &-points {
       display: flex;
       flex-direction: column;
-      gap: 160px;
+      justify-content: space-between;
     }
 
     &-img-container {
@@ -33,6 +32,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+
     &-text {
       font-size: 24px;
     }
@@ -52,5 +52,13 @@
     left: 15%;
     font-size: 24px;
     
+  }
+}
+
+@media (max-width: var.$l-breakpoint) {
+  .about {
+    &__description-text {
+      font-size: 16px;
+    }
   }
 }

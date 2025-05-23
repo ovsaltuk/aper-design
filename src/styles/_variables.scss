@@ -3,3 +3,14 @@ $text-black: #080d11;
 $text-white: #fff;
 
 
+
+$l-breakpoint: 1800px;
+$m-breakpoint: 1440px;
+
+@mixin section-margin {
+    margin-bottom: 180px;
+    
+    @media (max-width: $l-breakpoint) {
+        margin-bottom: 100px;
+    }
+}

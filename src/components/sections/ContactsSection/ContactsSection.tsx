@@ -5,7 +5,7 @@ import { SectionTitle } from "../../common/SectionTitle/SectionTitle";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const ContactsSection: FC = () => {
-    return (<section className="contacts-section">
+    return (<section className="contacts-section" id="contacts">
         <div className="container contacts-section__container">
             <img src={contactsImg} alt="pervova" />
             <div className="contacts">

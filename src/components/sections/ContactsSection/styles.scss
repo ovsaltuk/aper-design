@@ -1,5 +1,7 @@
+@use "../../../styles/variables" as var;
+
 .contacts-section {
-  padding: 170px 0;
+  @include var.section-margin;
 
   &__container {
     display: grid;
@@ -25,5 +27,19 @@
     align-items: center;
     gap: 30px;
     font-size: 64px;
+  }
+}
+
+@media (max-width: var.$l-breakpoint) {
+  .contacts {
+    justify-content: space-around;
+    &__link {
+      font-size: 38px;
+
+      svg {
+        width: 44px;
+        height: 44px;
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@ import d190 from "../../../assets/ProjectsPictures/d190.webp";
 
 export const ProjectsSection: FC = () => {
   return (
-    <section className="project-section">
+    <section className="project-section" id="projects">
       <a href="#" className="project-section__project" ><img className="project-section__project-img" src={familia} alt="familia" /><span className="project-section__project-title">FAMILIA</span></a>
       <a href="#" className="project-section__project" ><img className="project-section__project-img" src={b434} alt="b434" /><span className="project-section__project-title">b - 434</span></a>
       <a href="#" className="project-section__project" ><img className="project-section__project-img" src={d137} alt="d137" /><span className="project-section__project-title">d1 - 37</span></a>

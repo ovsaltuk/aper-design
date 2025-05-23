@@ -1,15 +1,21 @@
 import { FC } from "react";
 import "./styles.scss";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-export const Navigation: FC = () => {
+export interface INavigationItem {
+  text: string;
+  link: string;
+}
+
+interface INavigationProps {
+  linksList: INavigationItem[];
+}
+
+export const Navigation: FC<INavigationProps> = ({ linksList }) => {
   return (
     <nav className="nav">
       <ul className="nav__list">
-        <li className="nav__item"><a href="#" className="nav__link">nav-item</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">nav-item</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">nav-item</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">nav-item</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">nav-item</a></li>
+        {linksList.map(({ text, link }) => <li className="nav__item"><AnchorLink href={link} offset={100} className="nav__link">{text}</AnchorLink></li>)}
       </ul>
     </nav>
   );

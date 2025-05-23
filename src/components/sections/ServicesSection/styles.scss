@@ -1,4 +1,8 @@
+@use "../../../styles/variables" as var;
+
 .services-section {
+    @include var.section-margin;
+
     &__container {
         position: relative;
     }
@@ -22,7 +26,7 @@
 
 .service {
     display: grid;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 60% 1fr;
     color: white;
     font-weight: 200;
 
@@ -63,4 +67,11 @@
 
 .service:not(:last-child) {
     border-right: 1px solid white;
+}
+
+
+@media (max-width: var.$l-breakpoint) {
+    .service {
+        grid-template-rows: 40% 1fr;
+    }
 }

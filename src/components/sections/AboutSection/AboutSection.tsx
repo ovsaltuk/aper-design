@@ -1,11 +1,11 @@
 import { FC } from "react";
 import "./styles.scss";
-import AboutImg from "../../../assets/about-img.webp";
+import AboutImg from "../../../assets/AboutPictures/about-img.webp";
 import { SectionTitle } from "../../common/SectionTitle/SectionTitle";
 
 export const AboutSection: FC = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       
       <div className="container">
         <div className="about__advantages">

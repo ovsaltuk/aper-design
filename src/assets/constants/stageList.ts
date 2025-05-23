@@ -1,4 +1,4 @@
-import { IStage } from "./Stage/Stage";
+import { IStage } from "../../components/common/StageList/Stage/Stage";
 
 export const stageList: IStage[] = [
     {

@@ -1,7 +1,7 @@
 @use "../../../styles/_variables" as var;
 
 .process-section {
-    padding-bottom: 180px;
+    @include var.section-margin;
     &__container {
         position: relative;
         display: grid;
