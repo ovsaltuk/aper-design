@@ -75,3 +75,18 @@
         grid-template-rows: 40% 1fr;
     }
 }
+
+@media (max-width: var.$m-breakpoint) {
+    .service {
+        &__title {
+            font-size: 20px;
+            margin-bottom: 26px;
+        }
+
+        &__list-item {
+            padding-left: 15px;
+            font-size: 14px;
+        }
+
+    }
+}

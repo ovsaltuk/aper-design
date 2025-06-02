@@ -5,7 +5,7 @@
     &__container {
         position: relative;
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 70% 1fr;
         align-items: center
     }
 
@@ -13,5 +13,13 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+}
+
+@media (max-width: var.$m-breakpoint) {
+    .process-section {
+    &__container {
+        grid-template-columns: 60% 1fr;
+    }
     }
 }

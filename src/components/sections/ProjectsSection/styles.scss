@@ -37,3 +37,15 @@
     }
   }
 }
+
+@media (max-width: var.$l-breakpoint) {
+  .project-section {
+    &__project {
+      &-title {
+        right: 30px;
+        bottom: 30px;
+        font-size: 32px;
+      }
+    }
+  }
+}

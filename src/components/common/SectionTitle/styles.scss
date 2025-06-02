@@ -13,3 +13,9 @@
     font-size: 120px;
   }
 }
+
+@media (max-width: var.$m-breakpoint) {
+  .section-title {
+    font-size: 85px;
+  }
+}

@@ -2,6 +2,10 @@ import { INavigationItem } from "../../components/Navigation/Navigation";
 
 export const headerNavList: INavigationItem[]  = [
     {
+        text: "Главная",
+        link: "#main"
+    },
+    {
         text: "Проекты",
         link: "#projects"
     },

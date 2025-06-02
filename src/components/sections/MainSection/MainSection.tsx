@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 export const MainSection: FC = () => {
   return (
-    <section className="main-section">
+    <section className="main-section" id="main">
       <LogoSVG className="main-section__background-svg"/>
       <div className="container">
         <span className="main-section__title">Интерьер, где вы в главной роли</span>

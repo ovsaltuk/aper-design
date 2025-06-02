@@ -1,5 +1,13 @@
+@use "../../../styles/variables" as var;
+
 .stage-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: var.$m-breakpoint) {
+  .stage-list {
+    gap: 18px;
+  }
 }

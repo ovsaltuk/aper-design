@@ -143,3 +143,9 @@ label {
     max-width: 1200px;
   }
 }
+
+@media (max-width: var.$m-breakpoint) {
+  .container {
+    max-width: 1000px;
+  }
+}

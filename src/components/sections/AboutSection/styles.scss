@@ -2,8 +2,8 @@
 
 .about {
   position: relative;
-  @include var.section-margin;;
   font-family: "Inter";
+  @include var.section-margin;
 
   .container {
     display: grid;
@@ -51,7 +51,6 @@
     top: 80%;
     left: 15%;
     font-size: 24px;
-    
   }
 }
 
@@ -59,6 +58,23 @@
   .about {
     &__description-text {
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: var.$m-breakpoint) {
+  .about {
+    .advantage {
+      &__number {
+        font-size: 40px;
+      }
+
+      &__text {
+        font-size: 18px;
+      }
+    }
+    &__advantages-img-container {
+      padding-left: 30px;
     }
   }
 }
