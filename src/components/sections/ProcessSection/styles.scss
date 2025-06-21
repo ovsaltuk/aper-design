@@ -1,25 +1,42 @@
 @use "../../../styles/_variables" as var;
 
 .process-section {
-    @include var.section-margin;
-    &__container {
-        position: relative;
-        display: grid;
-        grid-template-columns: 70% 1fr;
-        align-items: center
-    }
+  @include var.section-margin;
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    align-items: center;
+  }
 
-    &__title {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+  &__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 @media (max-width: var.$m-breakpoint) {
-    .process-section {
+  .process-section {
     &__container {
-        grid-template-columns: 60% 1fr;
+      grid-template-columns: 60% 1fr;
     }
+  }
+}
+
+@media (max-width: var.$s-breakpoint) {
+  .process-section {
+    &__container {
+      display: block;
     }
+
+    &__title {
+        position: static;
+    }
+
+    &__right {
+        display: none;
+    }
+  }
+
 }

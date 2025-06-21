@@ -6,7 +6,8 @@ $text-white: #fff;
 
 $l-breakpoint: 1800px;
 $m-breakpoint: 1440px;
-$s-breakpoint: 1024px;
+$s-breakpoint: 1023px;
+$xs-breakpoint: 767px;
 
 @mixin section-margin {
     margin-bottom: 180px;

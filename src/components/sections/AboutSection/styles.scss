@@ -5,7 +5,13 @@
   font-family: "Inter";
   @include var.section-margin;
 
-  .container {
+  &__mobile-container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 30px;
+  }
+
+  &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -78,3 +84,37 @@
     }
   }
 }
+
+@media (max-width: var.$s-breakpoint) {
+  .about {
+    &__description-text {
+      font-size: 14px;
+    }
+    &__mobile-description {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__advantages-points {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    .advantage {
+      display: flex;
+      flex-direction: column;
+      max-width: 140px;
+      &__text {
+        position: static;
+      }
+    }
+
+    &__mobile-content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+} 

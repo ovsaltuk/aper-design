@@ -7,7 +7,7 @@ export const AboutSection: FC = () => {
   return (
     <section className="about" id="about">
       
-      <div className="container">
+      <div className="container about__container">
         <div className="about__advantages">
           <div className="about__advantages-points">
             <div className="advantage">

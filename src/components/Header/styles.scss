@@ -5,3 +5,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: var.$s-breakpoint) {
+    .header {
+        .logo {
+            svg {
+                width: 60px;
+                stroke-width: 1px;
+            }
+        }
+    }
+}

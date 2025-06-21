@@ -37,8 +37,6 @@
   font-display: swap;
 }
 
-
-
 * {
   padding: 0px;
   margin: 0px;
@@ -59,7 +57,7 @@ html {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE и Edge */
 
-  user-select: none
+  user-select: none;
 }
 
 html::-webkit-scrollbar {
@@ -137,7 +135,6 @@ label {
   margin: 0 auto;
 }
 
-
 @media (max-width: var.$l-breakpoint) {
   .container {
     max-width: 1200px;
@@ -149,3 +146,17 @@ label {
     max-width: 1000px;
   }
 }
+
+@media (max-width: var.$s-breakpoint) {
+  .container {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: var.$xs-breakpoint) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
